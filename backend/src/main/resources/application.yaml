@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cloud_storage_db
+    username: postgres
+    password: ${DB_PASSWORD:}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+jwt:
+  secret: ${JWT_SECRET:}
+  expiration: 86400000
+
+supabase:
+  url: ${SUPABASE_URL:}
+  secret-key: ${SUPABASE_SECRET_KEY:}
+  storage:
+    bucket: ${SUPABASE_BUCKET:cloud-files}

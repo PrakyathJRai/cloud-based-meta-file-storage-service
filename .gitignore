@@ -1,0 +1,61 @@
+# ================================
+# Java / Spring Boot
+# ================================
+backend/target/
+backend/.mvn/
+backend/*.log
+
+# Environment / secrets
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# ================================
+# Node / React / Vite
+# ================================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# ================================
+# IDE / Editor
+# ================================
+.vscode/
+.idea/
+*.iml
+
+# ================================
+# OS
+# ================================
+.DS_Store
+Thumbs.db
+
+# ================================
+# Logs
+# ================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ================================
+# Temporary files
+# ================================
+*.tmp
+*.temp
+
+# ================================
+# Uploaded files / local storage
+# ================================
+backend/src/main/resources/uploads/
+backend/uploads/
+backend/src/uploads/
+
+# ================================
+# Local database / generated files
+# ================================
+*.db
+*.sqlite
